@@ -1,5 +1,3 @@
-# FitnessApp
-
 # FITNESS APP
 
 ## Table of Contents
@@ -14,12 +12,12 @@ This is a fitness App that user can use to track their workouts and progress in 
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category: Health & Fitness
-- **Mobile: Primarily a mobile app iPhone users
-- **Story: Helps users with workouts and fitness
-- **Market: Anyone can choose to use the app and would find it helpful
-- **Habit:The app could be used daily or depending on users fitness level
-- **Scope: First we would help user with basic fitness needs. Later, we can add finding training partners, groups, and food tracking. 
+- Category: Health & Fitness
+-Mobile: Primarily a mobile app iPhone users
+-Story: Helps users with workouts and fitness
+-Market: Anyone can choose to use the app and would find it helpful
+-Habit:The app could be used daily or depending on users fitness level
+-Scope: First we would help user with basic fitness needs. Later, we can add finding training partners, groups, and food tracking. 
 
 ## Product Spec
 
