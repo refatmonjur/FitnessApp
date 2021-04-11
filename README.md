@@ -1,8 +1,6 @@
 # FitnessApp
-Original App Design Project - README Template
-===
 
-# APP_NAME_HERE
+# FITNESS APP
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -12,16 +10,16 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+This is a fitness App that user can use to track their workouts and progress in the gym. The app would also give user multiple workouts to try out based on their BMI.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category: Health & Fitness
+- **Mobile: Primarily a mobile app iPhone users
+- **Story: Helps users with workouts and fitness
+- **Market: Anyone can choose to use the app and would find it helpful
+- **Habit:The app could be used daily or depending on users fitness level
+- **Scope: First we would help user with basic fitness needs. Later, we can add finding training partners, groups, and food tracking. 
 
 ## Product Spec
 
