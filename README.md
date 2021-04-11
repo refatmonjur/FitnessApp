@@ -27,39 +27,49 @@ This is a fitness App that user can use to track their workouts and progress in 
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User can login to see their progress
+* User chooses the type of workouts
+* Uncheck actions taken on the app
+* Logout
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* Meal prep ideas
+* Random workout selection
+* Connecting to other users
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* Login
+* Register
+   * user signs up
+* Profile
+  * Daily workout calories 
+  * Muscle worked out
+* Home
+   * motivational quotes 
+   * suggestions 
+* Workout
+   * Types of workouts: Weight Training or High Intensity Workouts
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* Home
+* Workouts
+* Profile
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* Forced Log-in 
+    *  Account creation if no log in is available
+* Workout Selection 
+   * choose the type of workouts
+* Profile 
+   * change settings
+   * calculate BMI
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
