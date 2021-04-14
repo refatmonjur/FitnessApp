@@ -28,7 +28,7 @@ This is a fitness App that user can use to track their workouts and progress in 
 * User can login to see their progress
 * User chooses the type of workouts
 * Add motivational quote API
-* Uncheck actions taken on the app
+* Profile screen setup
 * Logout
 
 **Optional Nice-to-have Stories**
