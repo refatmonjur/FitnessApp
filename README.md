@@ -91,10 +91,10 @@ This is a fitness App that user can use to track their workouts and progress in 
 ### Networking
 List of network requests by screen
 
-**SignIn/SignUp**
+*SignIn/SignUp
 
-* (Create/POST) Create a new user account.
-* (Read/GET) Query the user information.
+	* (Create/POST) Create a new user account.
+	* (Read/GET) Query the user information.
 
 **Home Screen**
 
