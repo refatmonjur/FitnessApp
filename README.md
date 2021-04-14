@@ -25,11 +25,10 @@ This is a fitness App that user can use to track their workouts and progress in 
 
 **Required Must-have Stories**
 
-* User can login to see their progress
+* User can login to see their progress and also Logout
 * User chooses the type of workouts
 * Add motivational quote API
 * Profile screen setup
-* Logout
 
 **Optional Nice-to-have Stories**
 
