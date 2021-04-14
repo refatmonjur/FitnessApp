@@ -96,6 +96,19 @@ List of network requests by screen
 
 * SignIn/SignUp
   * (Create/POST) Create a new user account.
+ 
+    let query = PFQuery(className:"Post")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    
   * (Read/GET) Query the user information.
 
 * Home Screen
