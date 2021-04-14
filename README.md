@@ -89,6 +89,17 @@ This is a fitness App that user can use to track their workouts and progress in 
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+List of network requests by screen
+
+Home Feed Screen
+(Read/GET) Query all posts where user is author
+(Create/POST) Create a new like on a post
+(Delete) Delete existing like
+(Create/POST) Create a new comment on a post
+(Delete) Delete existing comment
+Create Post Screen
+(Create/POST) Create a new post object
+Profile Screen
+(Read/GET) Query logged in user object
+(Update/PUT) Update user profile image
+
