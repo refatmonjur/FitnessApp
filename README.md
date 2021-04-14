@@ -96,7 +96,7 @@ List of network requests by screen
 
 * SignIn/SignUp
   * (Create/POST) Create a new user account.
- 
+    ```
     let query = PFQuery(className:"Post")
     query.whereKey("author", equalTo: currentUser)
     query.order(byDescending: "createdAt")
@@ -108,7 +108,7 @@ List of network requests by screen
           // TODO: Do something with posts...
        }
     }
-    
+    ```
   * (Read/GET) Query the user information.
 
 * Home Screen
