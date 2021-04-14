@@ -90,6 +90,13 @@ This is a fitness App that user can use to track their workouts and progress in 
 [Add table of models]
 ### Networking
 List of network requests by screen
+**Required Must-have Stories**
+
+* User can login to see their progress
+* User chooses the type of workouts
+* Uncheck actions taken on the app
+* Logout
+
 
 **Home Feed Screen**
 
