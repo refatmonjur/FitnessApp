@@ -78,6 +78,9 @@ This is a fitness App that user can use to track their workouts and progress in 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+## Models
+
+### Post 
 |   Property       | Type           |   Description        |
 | -----------------|----------------|----------------------| 
 |ObjectID          |String          |Unique id for each user post |
@@ -85,15 +88,9 @@ This is a fitness App that user can use to track their workouts and progress in 
 |Image	|File	|Profile picture 
 |Progression	|Number 	|Number of workouts done in a week |
 |TimeSpend 	|DateTime	|Amount of time spend on a workout|
-|Selection	|Array 	|Which workout was done throughout the week|
-
- 
+|Selection	|Array 	|Which workout was done throughout the week| 
 
 
-
-[This section will be completed in Unit 9]
-### Models
-[Add table of models]
 ### Networking
 List of network requests by screen
 
