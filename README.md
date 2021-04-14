@@ -78,11 +78,17 @@ This is a fitness App that user can use to track their workouts and progress in 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-	Property 	Type	Description
-		
-		
-		
-		
+|   Property       | Type           |   Description        |
+| -----------------|----------------|----------------------| 
+|ObjectID          |String          |Unique id for each user post |
+|Author 	|pointer to the user |	Users information |
+|Image	|File	|Profile picture 
+|Progression	|Number 	|Number of workouts done in a week |
+|TimeSpend 	|DateTime	|Amount of time spend on a workout|
+|Selection	|Array 	|Which workout was done throughout the week|
+
+ 
+
 
 
 [This section will be completed in Unit 9]
