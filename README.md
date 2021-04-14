@@ -91,15 +91,15 @@ This is a fitness App that user can use to track their workouts and progress in 
 ### Networking
 List of network requests by screen
 
-Home Feed Screen
+**Home Feed Screen**
 *(Read/GET) Query all posts where user is author
 *(Create/POST) Create a new like on a post
 *(Delete) Delete existing like
 *(Create/POST) Create a new comment on a post
 *(Delete) Delete existing comment
-Create Post Screen
+**Create Post Screen**
 *(Create/POST) Create a new post object
-Profile Screen
+**Profile Screen**
 *(Read/GET) Query logged in user object
 *(Update/PUT) Update user profile image
 
