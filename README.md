@@ -78,6 +78,13 @@ This is a fitness App that user can use to track their workouts and progress in 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+	Property 	Type	Description
+		
+		
+		
+		
+
+
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]
