@@ -110,20 +110,176 @@ List of network requests by screen
     }
     ```
   * (Read/GET) Query the user information.
+    ```Swift
+    let query = PFQuery(className:"Get")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
 
 * Home Screen
   * (Create/POST) Create a new like on the quote.
+    ```Swift
+    let query = PFQuery(className:"Post")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Delete/DELETE) Delete an existing like.
+    ```Swift
+    let query = PFQuery(className:"Delete")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Read/GET) Read a users last workout date.
+    ```Swift
+    let query = PFQuery(className:"Get")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
 
 * Workout
   * (Create/POST) Make a new workout selection.
+    ```Swift
+    let query = PFQuery(className:"Post")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Delete/DELETE) Unselect a workout choice.
+    ```Swift
+    let query = PFQuery(className:"Delete")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Update/PUT) Time spent for a workout.
+    ```Swift
+    let query = PFQuery(className:"Put")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Update/PUT) Muscles workout out.
+    ```Swift
+    let query = PFQuery(className:"Put")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
 
 * Profile
   * (Read/Get) Query logged in user object.
+    ```Swift
+    let query = PFQuery(className:"Get")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Update/PUT) Update user profile image.
+    ```Swift
+    let query = PFQuery(className:"Put")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Update/PUT) Get current day workout progress.
+    ```Swift
+    let query = PFQuery(className:"Put")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
   * (Read/GET) Get last workout details.
+    ```Swift
+    let query = PFQuery(className:"Get")
+    query.whereKey("author", equalTo: currentUser)
+    query.order(byDescending: "createdAt")
+    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+       if let error = error {
+          print(error.localizedDescription)
+       } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+       }
+    }
+    ```
