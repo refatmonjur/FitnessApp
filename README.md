@@ -90,28 +90,26 @@ This is a fitness App that user can use to track their workouts and progress in 
 [Add table of models]
 ### Networking
 List of network requests by screen
-**Required Must-have Stories**
 
-* User can login to see their progress
-* User chooses the type of workouts
-* Uncheck actions taken on the app
-* Logout
+**SignIn/SignUp**
 
+* (Create/POST) Create a new user account.
+* (Read/GET) Query the user information.
 
-**Home Feed Screen**
+**Home Screen**
 
-*(Read/GET) Query all posts where user is author
-*(Create/POST) Create a new like on a post
-*(Delete) Delete existing like
-*(Create/POST) Create a new comment on a post
-*(Delete) Delete existing comment
+* (Create/POST) Create a new like on the quote.
+* (Delete/DELETE) Delete an existing like.
+* (Read/GET) Read a users last workout date.
 
-**Create Post Screen**
+**Workout**
+* (Create/POST) Make a new workout selection.
+* (Delete/DELETE) Unselect a workout choice.
+* (Update/PUT) Time spent for a workout.
+* (Update/PUT) Muscles workout out.
 
-*(Create/POST) Create a new post object
-
-**Profile Screen**
-
-*(Read/GET) Query logged in user object
-*(Update/PUT) Update user profile image
-
+**Profile**
+* (Read/Get) Query logged in user object.
+* (Update/PUT) Update user profile image.
+* (Update/PUT) Get current day workout progress.
+* (Read/GET) Get last workout details.
