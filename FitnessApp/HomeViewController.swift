@@ -17,11 +17,28 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        quoteTableView.dataSource = self
-        quoteTableView.delegate = self
-        // Do any additional setup after loading the view.
-        print("Hello")
+        fetchPostData { (posts) in
+            for post in posts{
+                print(post.text!)
+                
+            }
+        }
+    
         
+    }
+    func fetchPostData(completionHandler: @escaping ([Post]) -> Void){
+        let url = URL(string:"https://type.fit/api/quotes")!
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data else {return}
+            do {
+                let postsData = try JSONDecoder().decode([Post].self, from: data)
+                completionHandler(postsData)
+            }
+            catch{
+                let error = error
+                print (error.localizedDescription)
+            }
+        }
     }
     
 
