@@ -7,13 +7,21 @@
 
 import UIKit
 import Parse
+import AVFoundation
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    var quotes = [[String:Any]]()
+    @IBOutlet weak var quoteTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        quoteTableView.dataSource = self
+        quoteTableView.delegate = self
         // Do any additional setup after loading the view.
+        print("Hello")
+        
     }
     
 
@@ -33,5 +41,12 @@ class HomeViewController: UIViewController {
         guard let _ = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = self.view.window?.windowScene?.delegate as? SceneDelegate else {return}
         delegate.window?.rootViewController = LoginViewController
     }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return quotes.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+        return cell
+    }
 }
