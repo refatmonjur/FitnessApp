@@ -7,7 +7,6 @@
 
 import UIKit
 import Parse
-import AVFoundation
 
 class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
@@ -17,29 +16,33 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchPostData { (posts) in
-            for post in posts{
-                print(post.text!)
-                
-            }
+        quoteTableView.dataSource = self
+        quoteTableView.delegate = self
+        // Do any additional setup after loading the view.
+        print("Hello")
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
+        let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        let task = session.dataTask(with: request) { (data, response, error) in
+           // This will run when the network request returns
+           if let error = error {
+              print(error.localizedDescription)
+           } else if let data = data {
+              let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+              self.quotes = dataDictionary["results"] as! [[String:Any]]
+              self.quoteTableView.reloadData()
+              
+              // TODO: Get the array of movies
+              // TODO: Store the movies in a property to use elsewhere
+              // TODO: Reload your table view data
+
+           }
         }
+        task.resume()
     
         
     }
-    func fetchPostData(completionHandler: @escaping ([Post]) -> Void){
-        let url = URL(string:"https://type.fit/api/quotes")!
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else {return}
-            do {
-                let postsData = try JSONDecoder().decode([Post].self, from: data)
-                completionHandler(postsData)
-            }
-            catch{
-                let error = error
-                print (error.localizedDescription)
-            }
-        }
-    }
+
     
 
     /*
@@ -64,6 +67,11 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
+
+        let movie = quotes[indexPath.row]
+        let title = movie["title"] as! String
+        print(title)
+        cell.quoteLabel.text = title
         return cell
     }
 }

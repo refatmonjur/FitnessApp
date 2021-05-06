@@ -21,7 +21,6 @@
 		8282A713262E88E200FAAADE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8282A712262E88E200FAAADE /* LoginViewController.swift */; };
 		8C970C0EEBA9AAF744DE5C07 /* Pods_FitnessApp_FitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D96E69CD1AA8394B2F7499C /* Pods_FitnessApp_FitnessAppUITests.framework */; };
 		91D25805BD34881754203BEE /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641E22A44230128C91E6FD64 /* Pods_FitnessAppTests.framework */; };
-		DD4186D22643204F00864571 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4186D12643204F00864571 /* Posts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 		B881F444D2354E0827A3188A /* Pods-FitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessAppTests.release.xcconfig"; path = "Target Support Files/Pods-FitnessAppTests/Pods-FitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		C4DACBE3D05202A09A45C8CF /* Pods-FitnessApp-FitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD214158FA2CF5859370AE4A /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD4186D12643204F00864571 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		F8481F56FBBDB8BF3F745AC6 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +145,6 @@
 				1E08E3EA262A9418004A69AC /* Info.plist */,
 				8282A70D262E837000FAAADE /* HomeViewController.swift */,
 				8282A712262E88E200FAAADE /* LoginViewController.swift */,
-				DD4186D12643204F00864571 /* Posts.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -419,7 +416,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E08E3E1262A9417004A69AC /* ViewController.swift in Sources */,
-				DD4186D22643204F00864571 /* Posts.swift in Sources */,
 				1E08E3DD262A9417004A69AC /* AppDelegate.swift in Sources */,
 				1E08E3DF262A9417004A69AC /* SceneDelegate.swift in Sources */,
 				824368CF264243A900CCC563 /* TableViewCell.swift in Sources */,

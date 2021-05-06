@@ -9,7 +9,8 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
-    @IBOutlet weak var quoteImageView: UIImageView!
+    
+    @IBOutlet weak var quoteLabel: UILabel!
     
     
     override func awakeFromNib() {
