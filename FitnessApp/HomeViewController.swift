@@ -47,7 +47,8 @@ class HomeViewController: UIViewController {
         let month = dateTimeComponents.month!
         let day = String(dateTimeComponents.day!)
         let year = String(dateTimeComponents.year!)
-        let date = months[month-1] + day + ", " + year
+        let date = months[month-1] + " " + day + ", " + year
+        dateLabel.text = date
         
         
         
