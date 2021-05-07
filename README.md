@@ -38,18 +38,18 @@ This is a fitness App that user can use to track their workouts and progress in 
 
 ### 2. Screen Archetypes
 
-* Login Screen
-   *[x] user signs up
-   *[x] user login & signin
-* Home
-   *[x] motivational quotes 
-   *[x] motivational images
-   *[x] Date and Time
-* Profile
-   *[] Daily workout calories 
-   *[] Muscle worked out
-* Workout
-   *[] Types of workouts: Weight Training or High Intensity Workouts
+#### Login Screen
+- [X] user signs up
+- [X] user login & signin
+#### Home
+- [X] motivational quotes 
+- [X] motivational images
+- [X] Date and Time
+#### Profile
+- [] Daily workout calories 
+- [] Muscle worked out
+#### Workout
+- [] Types of workouts: Weight Training or High Intensity Workouts
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
@@ -284,5 +284,5 @@ List of network requests by screen
     }
     ```
     ## Gif's update:
-    # Home Screen:
+    ### Home Screen:
     ![](homeScreen.gif)
