@@ -2,9 +2,10 @@
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
+5. [Build Pregress Gif's](#Progress)
 
 ## Overview
 ### Description
@@ -23,18 +24,21 @@ This is a fitness App that user can use to track their workouts and progress in 
 
 ### 1. User Stories (Required and Optional)
 
-**Required Must-have Stories**
+#### Required Must-have Stories**
 
-* User can login to see their progress and also Logout
-* User chooses the type of workouts
-* Add motivational quote API
-* Profile screen setup
+- [X] User can login to see their progress and also Logout
+- [X] tab Bar for different screens
+- [X] Add motivational quote
+- [X] motivational Images
+- [X] shows Date and Time
+- [ ] User chooses the type of workouts
+- [ ] Profile screen setup
 
-**Optional Nice-to-have Stories**
+#### Optional Nice-to-have Stories**
 
-* Meal prep ideas
-* Random workout selection
-* Connecting to other users
+- [ ] Meal prep ideas
+- [ ] Random workout selection
+- [ ] Connecting to other users
 
 ### 2. Screen Archetypes
 
@@ -46,10 +50,10 @@ This is a fitness App that user can use to track their workouts and progress in 
 - [X] motivational images
 - [X] Date and Time
 #### Profile
-- [] Daily workout calories 
-- [] Muscle worked out
+- [ ] Daily workout calories 
+- [ ] Muscle worked out
 #### Workout
-- [] Types of workouts: Weight Training or High Intensity Workouts
+- [ ] Types of workouts: Weight Training or High Intensity Workouts
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
@@ -283,6 +287,6 @@ List of network requests by screen
        }
     }
     ```
-    ## Gif's update:
+    # Progress
     ### Home Screen:
     ![](homeScreen.gif)
