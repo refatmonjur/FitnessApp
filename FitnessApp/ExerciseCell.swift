@@ -8,9 +8,11 @@
 import UIKit
 
 class ExerciseCell: UITableViewCell {
-    @IBOutlet weak var muscleImage: UIImageView!
-    @IBOutlet weak var muscleName: UILabel!
-    @IBOutlet weak var muscleCount: UILabel!
+
+    @IBOutlet weak var mImage: UIImageView!
+    
+    @IBOutlet weak var mCount: UILabel!
+    @IBOutlet weak var mType: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
