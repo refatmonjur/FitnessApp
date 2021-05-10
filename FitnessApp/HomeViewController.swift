@@ -8,14 +8,64 @@
 import UIKit
 import Parse
 import AlamofireImage
+import AVFoundation
 
 class HomeViewController: UIViewController {
-    
+     var seconds = 30
+    var timer = Timer()
+    var audioPlayer = AVAudioPlayer()
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var quoteImageView: UIImageView!
+    
+    
+    @IBOutlet weak var secondLabel: UILabel!
+    
+    @IBOutlet weak var sliderOutlet: UISlider!
+    
+    @IBAction func sliderAction(_ sender: UISlider) {
+        seconds = Int(sender.value)
+        secondLabel.text = String(seconds) + " seconds"
+    }
+    
+    
+    @IBOutlet weak var startOutlet: UIButton!
+    
+    @IBAction func start(_ sender: UIButton) {
+//        sliderOutlet.setValue(30, animated: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(HomeViewController.counter), userInfo: nil, repeats: true)
+//        sliderOutlet.isHidden = true
+//        sliderOutlet.value = Float(String (seconds) as Int)
+        startOutlet.isHidden = true
+    }
+    @objc func counter (){
+        seconds = seconds - 1
+        secondLabel.text = String(seconds) + "  seconds"
+        
+        if (seconds == 0){
+            timer.invalidate()
+//            sliderOutlet.isHidden = false
+            startOutlet.isHidden = false
+            audioPlayer.play()
+            secondLabel.text = "Times Up"
+        }
+    }
+    
+    
+    
+    @IBOutlet weak var stopOutlet: UIButton!
+    
+    @IBAction func stop(_ sender: UIButton) {
+        timer.invalidate()
+        seconds = 30
+        sliderOutlet.setValue(30, animated: true)
+        secondLabel.text = String(seconds) + "seconds"
+        audioPlayer.stop()
+//        sliderOutlet.isHidden = false
+        startOutlet.isHidden = false
+    }
     
     var months = ["January","February","March","April","May","June","July","August","Septemner","October","November","December"]
     var quotes = [[String:Any]]()
@@ -50,6 +100,13 @@ class HomeViewController: UIViewController {
         let date = months[month-1] + " " + day + ", " + year
         dateLabel.text = date
         
+        do {
+            let audioPath = Bundle.main.path(forResource: "audioSound", ofType: ".mp3" )
+            try audioPlayer = AVAudioPlayer(contentsOf: URL(fileURLWithPath:  audioPath!))
+        }
+        catch{
+            
+        }
         
         
     }
