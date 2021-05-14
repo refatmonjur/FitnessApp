@@ -31,7 +31,8 @@ This is a fitness App that user can use to track their workouts and progress in 
 - [X] Add motivational quote
 - [X] motivational Images
 - [X] shows Date and Time
-- [ ] User chooses the type of workouts
+- [X] Workouts Screen
+- [] User chooses the type of workouts
 - [ ] Profile screen setup
 
 #### Optional Nice-to-have Stories**
