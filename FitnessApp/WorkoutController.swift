@@ -36,15 +36,18 @@ class WorkoutController: UIViewController,UITableViewDataSource,UITableViewDeleg
         
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        print("Detail screen loading!")
+        let cell = sender as! UITableViewCell
+        let indexPath = workoutTable.indexPath(for: cell)!
+        
+        let muscle = muscleGroups[indexPath.row]
+        
+        let detailsViewController = segue.destination as! workoutDetailsViewController
+        detailsViewController.muscleGroupType = muscle
+        
+        //unselect the moview when returning from the movieDetails
+        workoutTable.deselectRow(at: indexPath, animated: true)
     }
-    */
 
 }
