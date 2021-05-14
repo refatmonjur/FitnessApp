@@ -8,6 +8,7 @@ target 'FitnessApp' do
   # Pods for FitnessApp
   pod 'AlamofireImage'
   pod 'Parse'
+  pod 'lottie-ios'
 
   target 'FitnessAppTests' do
     inherit! :search_paths

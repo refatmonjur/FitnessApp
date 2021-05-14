@@ -15,8 +15,18 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let paddingView: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 20))
+        passwordField.leftView = paddingView
+        passwordField.leftViewMode = .always
+        let paddingView2: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: 20))
+        usernameField.leftView = paddingView2
+        usernameField.leftViewMode = .always
     }
+    
+    @IBAction func onTap(_ sender: Any) {
+        view.endEditing(true)
+    }
+    
     @IBAction func signIn(_ sender: Any) {
         let username = usernameField.text!
         let password = passwordField.text!
