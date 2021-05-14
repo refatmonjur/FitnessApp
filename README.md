@@ -289,5 +289,7 @@ List of network requests by screen
     }
     ```
     # Progress
-    ### Home Screen:
-    ![](homeScreen.gif)
+    ### Home Screen, Workout:
+    ![](unit12.gif)
+    
+    
