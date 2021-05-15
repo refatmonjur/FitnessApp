@@ -37,7 +37,7 @@ class WorkoutController: UIViewController,UITableViewDataSource,UITableViewDeleg
         return cell
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("Detail screen loading!")
+
         let cell = sender as! UITableViewCell
         let indexPath = workoutTable.indexPath(for: cell)!
         
