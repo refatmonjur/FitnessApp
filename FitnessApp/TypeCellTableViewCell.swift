@@ -11,6 +11,8 @@ class TypeCellTableViewCell: UITableViewCell {
 
     @IBOutlet weak var excerciseName: UILabel!
     
+    @IBOutlet weak var exerciseImageLabel: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

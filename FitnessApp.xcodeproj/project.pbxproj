@@ -156,10 +156,10 @@
 				DD59D13726480B0A007676B4 /* audioSound.mp3 */,
 				8282A712262E88E200FAAADE /* LoginViewController.swift */,
 				8235FE5F264755F100B1CBB5 /* WorkoutController.swift */,
-				8235FE612647561B00B1CBB5 /* ExerciseCell.swift */,
 				8219A948264ED5DB00B88044 /* workoutDetailsViewController.swift */,
-				8219A94A264EDB7E00B88044 /* TypeCellTableViewCell.swift */,
 				822AF7BE264F6A8C0051B1DB /* exerciseDetailsViewController.swift */,
+				8219A94A264EDB7E00B88044 /* TypeCellTableViewCell.swift */,
+				8235FE612647561B00B1CBB5 /* ExerciseCell.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
