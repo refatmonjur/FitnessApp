@@ -13,6 +13,8 @@ import AVFoundation
 class HomeViewController: UIViewController {
      var seconds = 30
     var timer = Timer()
+    @IBOutlet weak var openTimerLabel: UIButton!
+    @IBOutlet weak var timerBottomConstraint: NSLayoutConstraint!
     var audioPlayer = AVAudioPlayer()
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -119,4 +121,20 @@ class HomeViewController: UIViewController {
         delegate.window?.rootViewController = LoginViewController
     }
     
+    @IBAction func openTimer(_ sender: Any) {
+        if(timerBottomConstraint.constant == -14){
+            timerBottomConstraint.constant = -268
+            openTimerLabel.setTitle("Open Timer", for: .normal)
+ 
+        }
+        else{
+            timerBottomConstraint.constant = -14
+            openTimerLabel.setTitle("Close Timer", for: .normal)
+
+        }
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+        
+    }
 }
