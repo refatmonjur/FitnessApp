@@ -14,19 +14,6 @@ class exerciseDetailsViewController: UIViewController {
     
     var exerciseDesciptionLabelForDetails = ""
     
-//    var descriptionExercise = ["Arms": ["how are you "],
-//                "Chest": ["chest "],
-//                "Shoulders": ["shoulder"],
-//                "Back":["back"],
-//                "Legs": ["legs"],
-//    "Abs": "abs"] as [String:Any]
-//    var descriptionExercise = ["Arms": [" Biceps: Dumbell Curl","Biceps: Hammer Curl", "Biceps: Rope curl","Triceps: Pull Downs","Triceps: Dips"],
-//                "Chest": ["Barbell Bench Press","Push Ups","Cable Cross Over","Incline Chest Press","Pec Deck"],
-//                "Shoulders": ["Shoulder Press","Side Lateral Raise", "Arnold Press","Rear Delt Flies","Front Raises"],
-//                "Back":["Deadlift","Lat Pull Downs","Wide Grip Pull Ups","Barbell Rows","Seated Rows"],
-//                "Legs": ["Squats","Lunges", "Leg Press","Leg Extension","Leg Curls"],
-//                "Abs": ["Sit Ups","Hanging Leg Raises", "Reverse crunches","Planks","Russian Twist"]] as [String : Any]
-    
     var descriptionExercise = [" Biceps: Dumbell Curl": " hello",
                                "Biceps: Hammer Curl" : "fjsdkfjsdf",
                                "Biceps: Rope curl": "ui",

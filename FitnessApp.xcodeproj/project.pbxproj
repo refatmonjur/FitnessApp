@@ -26,6 +26,8 @@
 		8C970C0EEBA9AAF744DE5C07 /* Pods_FitnessApp_FitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D96E69CD1AA8394B2F7499C /* Pods_FitnessApp_FitnessAppUITests.framework */; };
 		91D25805BD34881754203BEE /* Pods_FitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641E22A44230128C91E6FD64 /* Pods_FitnessAppTests.framework */; };
 		DD59D13826480B0A007676B4 /* audioSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DD59D13726480B0A007676B4 /* audioSound.mp3 */; };
+		DDB8E0D126521372002B0FE6 /* NutritionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8E0D026521372002B0FE6 /* NutritionViewController.swift */; };
+		DDB8E0E426521D13002B0FE6 /* NutritionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8E0E326521D13002B0FE6 /* NutritionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		C4DACBE3D05202A09A45C8CF /* Pods-FitnessApp-FitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp-FitnessAppUITests/Pods-FitnessApp-FitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD214158FA2CF5859370AE4A /* Pods_FitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD59D13726480B0A007676B4 /* audioSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audioSound.mp3; sourceTree = "<group>"; };
+		DDB8E0D026521372002B0FE6 /* NutritionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionViewController.swift; sourceTree = "<group>"; };
+		DDB8E0E326521D13002B0FE6 /* NutritionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCell.swift; sourceTree = "<group>"; };
 		F8481F56FBBDB8BF3F745AC6 /* Pods-FitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-FitnessApp/Pods-FitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +152,7 @@
 				1E08E3DC262A9417004A69AC /* AppDelegate.swift */,
 				1E08E3DE262A9417004A69AC /* SceneDelegate.swift */,
 				1E08E3E0262A9417004A69AC /* ViewController.swift */,
+				8219A94A264EDB7E00B88044 /* TypeCellTableViewCell.swift */,
 				1E08E3E2262A9417004A69AC /* Main.storyboard */,
 				1E08E3E5262A9418004A69AC /* Assets.xcassets */,
 				1E08E3E7262A9418004A69AC /* LaunchScreen.storyboard */,
@@ -156,9 +161,10 @@
 				DD59D13726480B0A007676B4 /* audioSound.mp3 */,
 				8282A712262E88E200FAAADE /* LoginViewController.swift */,
 				8235FE5F264755F100B1CBB5 /* WorkoutController.swift */,
+				DDB8E0D026521372002B0FE6 /* NutritionViewController.swift */,
+				DDB8E0E326521D13002B0FE6 /* NutritionCell.swift */,
 				8219A948264ED5DB00B88044 /* workoutDetailsViewController.swift */,
 				822AF7BE264F6A8C0051B1DB /* exerciseDetailsViewController.swift */,
-				8219A94A264EDB7E00B88044 /* TypeCellTableViewCell.swift */,
 				8235FE612647561B00B1CBB5 /* ExerciseCell.swift */,
 			);
 			path = FitnessApp;
@@ -431,7 +437,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB8E0D126521372002B0FE6 /* NutritionViewController.swift in Sources */,
 				1E08E3E1262A9417004A69AC /* ViewController.swift in Sources */,
+				DDB8E0E426521D13002B0FE6 /* NutritionCell.swift in Sources */,
 				8219A949264ED5DB00B88044 /* workoutDetailsViewController.swift in Sources */,
 				8235FE60264755F100B1CBB5 /* WorkoutController.swift in Sources */,
 				1E08E3DD262A9417004A69AC /* AppDelegate.swift in Sources */,
