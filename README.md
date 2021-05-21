@@ -6,6 +6,7 @@
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
 5. [Build Pregress Gif's](#Progress)
+6. Next Steps(#Next)
 
 ## Overview
 ### Description
@@ -32,8 +33,8 @@ This is a fitness App that user can use to track their workouts and progress in 
 - [X] motivational Images
 - [X] shows Date and Time
 - [X] Workouts Screen
-- [] User chooses the type of workouts
-- [ ] Profile screen setup
+- [X] User chooses the type of workouts
+- [X] Nutrition Screen
 
 #### Optional Nice-to-have Stories**
 
@@ -50,18 +51,20 @@ This is a fitness App that user can use to track their workouts and progress in 
 - [X] motivational quotes 
 - [X] motivational images
 - [X] Date and Time
-#### Profile
-- [ ] Daily workout calories 
-- [ ] Muscle worked out
+#### Nutrition 
+- [X] Diet/Shows calories 
+- [ ] Ingredients
 #### Workout
-- [ ] Types of workouts: Weight Training or High Intensity Workouts
+- [X] Types of workouts
+- [X] Different muscles
+- [X] Description
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
 * Home
 * Workouts
-* Profile
+* Nutrition
 
 **Flow Navigation** (Screen to Screen)
 
@@ -69,9 +72,10 @@ This is a fitness App that user can use to track their workouts and progress in 
     *  Account creation if no log in is available
 * Workout Selection 
    * choose the type of workouts
-* Profile 
-   * change settings
-   * calculate BMI
+* Nutrition  
+   * Pictures
+   * Calorie  Count
+   * Name of the food
 
 
 ## Wireframes
@@ -293,6 +297,13 @@ List of network requests by screen
     ![](unit12.gif)
     ### Final App
     ![](final.gif)
+      
+    # Next
+    - [ ] Create Custom API
+    - [ ] Connection Tab
+    - [ ] Implement reminder feature
+    - [ ] Animations
+    - [ ] Web Scraping for nutrition page   
     
     
     
