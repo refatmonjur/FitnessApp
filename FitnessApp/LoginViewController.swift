@@ -36,6 +36,7 @@ class LoginViewController: UIViewController {
             } else{
                 print("Error: \(String(describing: error?.localizedDescription))")
             }
+            
         }
     }
     

@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var quoteLabel: UILabel!
     @IBOutlet weak var quoteImageView: UIImageView!
     
+    @IBOutlet weak var usernameBox: UILabel!
+    
     
     @IBOutlet weak var secondLabel: UILabel!
     
@@ -72,7 +74,7 @@ class HomeViewController: UIViewController {
     var months = ["January","February","March","April","May","June","July","August","Septemner","October","November","December"]
     var quotes = [[String:Any]]()
     var custom = ["You got this", "If your dreams dont scare you, they are too small", "When you focus on the goods, The goods gets better", "Just Do It", "Great things never comes from comfort zones"]
-    var pictures = ["https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500","https://images.pexels.com/photos/258109/pexels-photo-258109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260","https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260","https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260","https://images.pexels.com/photos/91216/pexels-photo-91216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260","https://images.pexels.com/photos/2199486/pexels-photo-2199486.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"]
+    var pictures = ["https://images.pexels.com/photos/7828678/pexels-photo-7828678.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500","https://media.discordapp.net/attachments/825026368663978068/845121066279895100/wp6614076-blue-aesthetic-horizontal-wallpapers.jpg?width=1868&height=1051","https://images.pexels.com/photos/2646237/pexels-photo-2646237.jpeg?cs=srgb&dl=pexels-dexter-fernandes-2646237.jpg&fm=jpg","https://images.pexels.com/photos/1464474/pexels-photo-1464474.jpeg?cs=srgb&dl=pexels-henry-%26-co-1464474.jpg&fm=jpg","https://cdn.discordapp.com/attachments/825026368663978068/845121823947227186/WallpaperDog-92457.jpg","https://images.pexels.com/photos/7828692/pexels-photo-7828692.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -110,6 +112,8 @@ class HomeViewController: UIViewController {
             
         }
         
+        usernameBox.text = PFUser.current()!.username! as String
+        
         
     }
 
@@ -122,13 +126,13 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func openTimer(_ sender: Any) {
-        if(timerBottomConstraint.constant == -14){
-            timerBottomConstraint.constant = -268
+        if(timerBottomConstraint.constant == -24){
+            timerBottomConstraint.constant = -385
             openTimerLabel.setTitle("Open Timer", for: .normal)
  
         }
         else{
-            timerBottomConstraint.constant = -14
+            timerBottomConstraint.constant = -24
             openTimerLabel.setTitle("Close Timer", for: .normal)
 
         }
