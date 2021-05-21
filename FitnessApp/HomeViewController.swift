@@ -73,7 +73,7 @@ class HomeViewController: UIViewController {
     
     var months = ["January","February","March","April","May","June","July","August","Septemner","October","November","December"]
     var quotes = [[String:Any]]()
-    var custom = ["You got this", "If your dreams dont scare you, they are too small", "When you focus on the goods, The goods gets better", "Just Do It", "Great things never comes from comfort zones"]
+    var custom = ["Work hard in silence and let the success be the noise.", "If your dreams don't scare you, they are too small.", "When you focus on the goods, the goods gets better.", "Don't wait. The time will never be just right.", "Great things never comes from comfort zones."]
     var pictures = ["https://images.pexels.com/photos/7828678/pexels-photo-7828678.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500","https://media.discordapp.net/attachments/825026368663978068/845121066279895100/wp6614076-blue-aesthetic-horizontal-wallpapers.jpg?width=1868&height=1051","https://images.pexels.com/photos/2646237/pexels-photo-2646237.jpeg?cs=srgb&dl=pexels-dexter-fernandes-2646237.jpg&fm=jpg","https://images.pexels.com/photos/1464474/pexels-photo-1464474.jpeg?cs=srgb&dl=pexels-henry-%26-co-1464474.jpg&fm=jpg","https://cdn.discordapp.com/attachments/825026368663978068/845121823947227186/WallpaperDog-92457.jpg","https://images.pexels.com/photos/7828692/pexels-photo-7828692.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"]
 
     override func viewDidLoad() {

@@ -17,7 +17,7 @@ class NutritionViewController: UIViewController,UITableViewDataSource,UITableVie
     
     let foodType = ["Banana Strawberry Protein Shake","Smothie Bowl Recipe","Chicken","Oatmeal with fruits","Chie Pudding","Egg Omlet"]
     let TypePics = ["https://cdn.discordapp.com/attachments/825026368663978068/845139380368834590/strawberry-banana-smoothie-1-4.png","https://cdn.discordapp.com/attachments/825026368663978068/845135931404845056/5-minute-super-berry-smoothie-bowl-10.png","https://cdn.discordapp.com/attachments/825026368663978068/845136271286206474/10-ways-to-make-chicken-taste-great-4-700xh.png","https://cdn.discordapp.com/attachments/825026368663978068/845136538903117824/Recipe-for-Overnight-Oat-Meal-Prep-Bowls.png","https://cdn.discordapp.com/attachments/825026368663978068/845136685960134666/classic-vanilla-chia-pudding-6.png","https://cdn.discordapp.com/attachments/825026368663978068/845137352333983744/0siQaM1MqTv8KwCQYOv41F.png"]
-    let NutritionRecepe = ["Banana Strawberry Protein Shake","Smothie Bowl Recipe","Chicken","Oatmeal with fruits","Chie Pudding","Egg Omlet"]
+    let NutritionCalories = ["200 - 300 Calories   8 - 10Oz","400 - 450 Calories   1 bowl","200 - 260 Calories   140g ","190 Calories   1 cup","160 - 250 calories with toppings","94 Calories  61g"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,22 +35,9 @@ class NutritionViewController: UIViewController,UITableViewDataSource,UITableVie
     let picUrlFive = URL(string: TypePics[indexPath.row])
         cellFive.foodTypeImage.af_setImage(withURL: picUrlFive!)
         cellFive.foodTypeName.text = foodType[indexPath.row]
-
+        cellFive.caloriesPerReceipe.text = NutritionCalories[indexPath.row]
         return cellFive
 
-    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-//        let cell = sender as! UITableViewCell
-//        let indexPath = workoutTable.indexPath(for: cell)!
-//
-//        let muscle = muscleGroups[indexPath.row]
-//
-//        let detailsViewController = segue.destination as! workoutDetailsViewController
-//        detailsViewController.muscleGroupType = muscle
-//
-//        //unselect the moview when returning from the movieDetails
-//        workoutTable.deselectRow(at: indexPath, animated: true)
     }
 
 }

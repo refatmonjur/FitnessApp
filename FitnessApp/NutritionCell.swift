@@ -15,6 +15,9 @@ class NutritionCell: UITableViewCell {
     
     @IBOutlet weak var foodTypeName: UILabel!
     
+    
+    @IBOutlet weak var caloriesPerReceipe: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
