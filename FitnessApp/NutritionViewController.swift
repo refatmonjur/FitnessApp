@@ -15,9 +15,9 @@ class NutritionViewController: UIViewController,UITableViewDataSource,UITableVie
     
     @IBOutlet weak var NutritionTable: UITableView!
     
-    let foodType = ["Carbohydrates","Protein","Fibers","Minerals","Fats","Vitamins"]
-    let TypePics = ["https://cdn.discordapp.com/attachments/825026368663978068/842984524026871818/192-1922582_russian-twists-muscle-exercise.png","https://cdn.discordapp.com/attachments/825026368663978068/842984524026871818/192-1922582_russian-twists-muscle-exercise.png","https://cdn.discordapp.com/attachments/825026368663978068/842984524026871818/192-1922582_russian-twists-muscle-exercise.png","https://cdn.discordapp.com/attachments/825026368663978068/842984524026871818/192-1922582_russian-twists-muscle-exercise.png","https://cdn.discordapp.com/attachments/825026368663978068/842984524026871818/192-1922582_russian-twists-muscle-exercise.png","https://cdn.discordapp.com/attachments/825026368663978068/842984524026871818/192-1922582_russian-twists-muscle-exercise.png"]
-    
+    let foodType = ["Banana Strawberry Protein Shake","Smothie Bowl Recipe","Chicken","Oatmeal with fruits","Chie Pudding","Egg Omlet"]
+    let TypePics = ["https://cdn.discordapp.com/attachments/825026368663978068/845139380368834590/strawberry-banana-smoothie-1-4.png","https://cdn.discordapp.com/attachments/825026368663978068/845135931404845056/5-minute-super-berry-smoothie-bowl-10.png","https://cdn.discordapp.com/attachments/825026368663978068/845136271286206474/10-ways-to-make-chicken-taste-great-4-700xh.png","https://cdn.discordapp.com/attachments/825026368663978068/845136538903117824/Recipe-for-Overnight-Oat-Meal-Prep-Bowls.png","https://cdn.discordapp.com/attachments/825026368663978068/845136685960134666/classic-vanilla-chia-pudding-6.png","https://cdn.discordapp.com/attachments/825026368663978068/845137352333983744/0siQaM1MqTv8KwCQYOv41F.png"]
+    let NutritionRecepe = ["Banana Strawberry Protein Shake","Smothie Bowl Recipe","Chicken","Oatmeal with fruits","Chie Pudding","Egg Omlet"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
