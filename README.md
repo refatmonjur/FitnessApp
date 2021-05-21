@@ -6,7 +6,7 @@
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
 5. [Build Pregress Gif's](#Progress)
-6. Next Steps(#Next)
+6. [Next Steps](#Next)
 
 ## Overview
 ### Description
