@@ -1,3 +1,4 @@
+
 # FITNESS APP
 
 ## Table of Contents
@@ -297,7 +298,10 @@ List of network requests by screen
     ![](unit12.gif)
     ### Final App
     ![](final.gif)
-      
+    ### Narrated Video
+    https://user-images.githubusercontent.com/57269214/120058194-40ddf180-c017-11eb-8013-119c53723f96.mp4
+    
+    
     # Next
     - [ ] Create Custom API
     - [ ] Connection Tab
