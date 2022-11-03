@@ -1,32 +1,24 @@
 
 # FITNESS APP
 
-## Table of Contents
-1. [Overview](#Overview)
-2. [Product Spec](#Product-Spec)
-3. [Wireframes](#Wireframes)
-4. [Schema](#Schema)
-5. [Build Pregress Gif's](#Progress)
-6. [Next Steps](#Next)
-
 ## Overview
 ### Description
 This is a fitness App that user can use to track their workouts and progress in the gym. The app would also give user multiple workouts to try out based on their BMI.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- Category: Health & Fitness
--Mobile: Primarily a mobile app iPhone users
--Story: Helps users with workouts and fitness
--Market: Anyone can choose to use the app and would find it helpful
--Habit:The app could be used daily or depending on users fitness level
+<!-- [Evaluation of your app across the following attributes] -->
+-Category: Health & Fitness\
+-Mobile: Primarily a mobile app iPhone users\
+-Story: Helps users with workouts and fitness\
+-Market: Anyone can choose to use the app and would find it helpful\
+-Habit:The app could be used daily or depending on users fitness level\
 -Scope: First we would help user with basic fitness needs. Later, we can add finding training partners, groups, and food tracking. 
 
 ## Product Spec
 
-### 1. User Stories (Required and Optional)
+### 1. User Stories
 
-#### Required Must-have Stories**
+#### Implemented Stories**
 
 - [X] User can login to see their progress and also Logout
 - [X] tab Bar for different screens
@@ -37,11 +29,11 @@ This is a fitness App that user can use to track their workouts and progress in 
 - [X] User chooses the type of workouts
 - [X] Nutrition Screen
 
-#### Optional Nice-to-have Stories**
+<!-- #### Optional Nice-to-have Stories**
 
 - [ ] Meal prep ideas
 - [ ] Random workout selection
-- [ ] Connecting to other users
+- [ ] Connecting to other users -->
 
 ### 2. Screen Archetypes
 
@@ -54,7 +46,7 @@ This is a fitness App that user can use to track their workouts and progress in 
 - [X] Date and Time
 #### Nutrition 
 - [X] Diet/Shows calories 
-- [ ] Ingredients
+<!-- - [ ] Ingredients -->
 #### Workout
 - [X] Types of workouts
 - [X] Different muscles
@@ -80,14 +72,14 @@ This is a fitness App that user can use to track their workouts and progress in 
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
+<!-- [Add picture of your hand sketched wireframes in this section] -->
 <img src="wireframe.png" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
+<!-- ### [BONUS] Digital Wireframes & Mockups
 
-### [BONUS] Interactive Prototype
+### [BONUS] Interactive Prototype -->
 
-## Schema 
+<!-- ## Schema 
 ## Models
 
 ### Post 
@@ -292,22 +284,16 @@ List of network requests by screen
           // TODO: Do something with posts...
        }
     }
-    ```
-    # Progress
-    ### Home Screen, Workout:
-    ![](unit12.gif)
-    ### Final App
-    ![](final.gif)
-    ### Narrated Video
-    https://user-images.githubusercontent.com/57269214/120058194-40ddf180-c017-11eb-8013-119c53723f96.mp4
+ -->
+ # Demo
+<!--  ### Home Screen, Workout:
+ ![](unit12.gif) -->
+ ### Walkthough
+ ![](final.gif)
+<!--  ### Narrated Video
+ https://user-images.githubusercontent.com/57269214/120058194-40ddf180-c017-11eb-8013-119c53723f96.mp4 -->
     
-    
-    # Next
-    - [ ] Create Custom API
-    - [ ] Connection Tab
-    - [ ] Implement reminder feature
-    - [ ] Animations
-    - [ ] Web Scraping for nutrition page   
+
     
     
     
